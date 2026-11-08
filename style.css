@@ -491,3 +491,29 @@ html[lang=te] .bible-verse figcaption{font-size:12px}
   .bible-verse blockquote{font-size:25px}
   html[lang=te] .bible-verse blockquote{font-size:17px}
 }
+
+/* V19: scripture introduces the closed envelope in both languages. */
+.cover>.corner{height:clamp(96px,16svh,145px);mask-image:linear-gradient(to bottom,#000 30%,transparent 100%)}
+.cover-verse{position:relative;z-index:2;width:calc(100% - 48px);max-width:520px;margin:0 auto 22px;padding:0;text-align:center}
+.cover-verse blockquote{font-size:27px;line-height:1.4;text-wrap:balance}
+.cover-verse figcaption{margin-top:5px;font-size:12px}
+html[lang=te] .cover-verse blockquote{font-size:18px;line-height:1.85}
+.cover .envelope{flex-shrink:0}
+@media(max-width:700px){
+  .cover-verse{margin-bottom:20px}
+  .cover-verse blockquote{font-size:23px}
+  html[lang=te] .cover-verse blockquote{font-size:16px}
+  .cover-verse figcaption,html[lang=te] .cover-verse figcaption{font-size:11px}
+  .cover-eyebrow{margin-bottom:42px}
+}
+@media(max-height:700px){
+  .cover>.corner{height:96px;opacity:.6}
+  .cover-verse{margin-bottom:12px}
+  .cover-verse blockquote{font-size:22px}
+  html[lang=te] .cover-verse blockquote{font-size:15px}
+  .cover-eyebrow{margin-bottom:28px}
+  .cover .envelope{width:250px;height:160px}
+  .cover-names{margin-top:24px}
+  .cover-hint{margin-top:8px}
+  .cover-footer{bottom:18px}
+}
