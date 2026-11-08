@@ -14,9 +14,9 @@
   <link rel="icon" type="image/svg+xml" href="monogram.svg">
   <link rel="preload" href="cormorant.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="cormorant-italic.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="style.css?v=13">
+  <link rel="stylesheet" href="style.css?v=15">
   <script>document.documentElement.classList.replace('no-js','js')</script>
-  <script src="app.js?v=14" defer></script>
+  <script src="app.js?v=15" defer></script>
 </head>
 <body class="is-closed">
   <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
@@ -60,8 +60,8 @@
 
   <main id="invitation">
     <section id="home" class="hero section-wrap">
+      <div class="corner corner-left hero-corner" aria-hidden="true"></div>
       <div class="hero-copy">
-        <div class="corner corner-left hero-corner" aria-hidden="true"></div>
         <p class="eyebrow" data-i18n="heroEyebrow">Together with our families</p>
         <h2 class="hero-names" tabindex="-1" id="main-title"><span data-i18n="dileep">Dileep</span><span class="names-second"><em>&</em> <span data-i18n="dayana">Dayana</span></span></h2>
         <svg class="botanical-divider" aria-hidden="true"><use href="#i-leaf"/></svg>
@@ -149,23 +149,10 @@
       </svg></div>
       <div class="section-heading reveal"><p class="eyebrow" data-i18n="eventsEyebrow">The wedding &amp; reception</p><h2 data-i18n="eventsTitle">Be a part of our joy.</h2><p data-i18n="eventsIntro">Bring your blessings, your laughter, and your favourite people.</p></div>
       <div class="event-grid section-wrap">
-        <article class="event-card reveal" id="wedding-card"><p class="eyebrow" data-i18n="weddingLabel">The wedding</p><h3 data-i18n="weddingHeading">Where forever begins</h3><svg class="botanical-divider" aria-hidden="true"><use href="#i-leaf"/></svg><p class="event-date">26.11.26</p><p class="event-time" data-i18n="weddingTime">Thursday · 10:00 AM</p><div class="event-venue"><svg aria-hidden="true"><use href="#i-pin"/></svg><div><h4 data-i18n="church">Epiphania Lutheran Church</h4><p data-i18n="city">Rajahmundry</p></div></div><a class="button button-sage directions" href="https://maps.app.goo.gl/qwdpMbREzA9SZhTE7" target="_blank" rel="noopener noreferrer"><span data-i18n="directions">Take me there</span><svg><use href="#i-arrow"/></svg></a><div class="event-actions"><details class="calendar-menu"><summary><svg aria-hidden="true"><use href="#i-calendar"/></svg><span data-i18n="addCalendar">Add to calendar</span></summary><div class="calendar-options"><a id="google-wedding" target="_blank" rel="noopener noreferrer" data-i18n="googleCalendar">Google Calendar</a><button type="button" data-calendar="wedding" data-i18n="downloadCalendar">Apple / Outlook (.ics)</button></div></details><button type="button" class="text-button" data-qr="wedding" data-i18n="viewQr">View QR</button></div></article>
-        <article class="event-card reveal" id="reception-card"><p class="eyebrow" data-i18n="receptionLabel">The reception</p><h3 data-i18n="receptionHeading">Let the joy linger</h3><svg class="botanical-divider" aria-hidden="true"><use href="#i-leaf"/></svg><p class="event-date">28.11.26</p><p class="event-time" data-i18n="receptionTime">Saturday · 10:00 AM</p><div class="event-venue"><svg aria-hidden="true"><use href="#i-pin"/></svg><div><h4 data-i18n="receptionVenue">Mangena Gangayya<br>Kalyana Mandapam</h4></div></div><a class="button button-sage directions" href="https://maps.app.goo.gl/k586X54S34gXMedg8" target="_blank" rel="noopener noreferrer"><span data-i18n="directions">Take me there</span><svg><use href="#i-arrow"/></svg></a><div class="event-actions"><details class="calendar-menu"><summary><svg aria-hidden="true"><use href="#i-calendar"/></svg><span data-i18n="addCalendar">Add to calendar</span></summary><div class="calendar-options"><a id="google-reception" target="_blank" rel="noopener noreferrer" data-i18n="googleCalendar">Google Calendar</a><button type="button" data-calendar="reception" data-i18n="downloadCalendar">Apple / Outlook (.ics)</button></div></details><button type="button" class="text-button" data-qr="reception" data-i18n="viewQr">View QR</button></div></article>
+        <article class="event-card reveal" id="wedding-card"><p class="eyebrow" data-i18n="weddingLabel">The wedding</p><h3 data-i18n="weddingHeading">Where forever begins</h3><svg class="botanical-divider" aria-hidden="true"><use href="#i-leaf"/></svg><p class="event-date">26.11.26</p><p class="event-time" data-i18n="weddingTime">Thursday · 10:00 AM</p><div class="event-venue"><svg aria-hidden="true"><use href="#i-pin"/></svg><div><h4 data-i18n="church">Epiphania Lutheran Church</h4><p data-i18n="city">Rajahmundry</p></div></div><a class="button button-sage directions" href="https://maps.app.goo.gl/qwdpMbREzA9SZhTE7" target="_blank" rel="noopener noreferrer"><span data-i18n="directions">Take me there</span><svg><use href="#i-arrow"/></svg></a><div class="event-actions"><details class="calendar-menu"><summary><svg aria-hidden="true"><use href="#i-calendar"/></svg><span data-i18n="addCalendar">Add to calendar</span></summary><div class="calendar-options"><a id="google-wedding" target="_blank" rel="noopener noreferrer" data-i18n="googleCalendar">Google Calendar</a><button type="button" data-calendar="wedding" data-i18n="downloadCalendar">Apple / Outlook (.ics)</button></div></details><button type="button" class="text-button" data-qr="wedding" data-i18n="viewQr">View QR</button></div><p class="event-ministry"><span data-i18n="weddingMinistry">Solemnized by</span><span data-i18n="officiantName">Rev. K. Rajesh Kumar</span></p></article>
+        <article class="event-card reveal" id="reception-card"><p class="eyebrow" data-i18n="receptionLabel">The reception</p><h3 data-i18n="receptionHeading">Let the joy linger</h3><svg class="botanical-divider" aria-hidden="true"><use href="#i-leaf"/></svg><p class="event-date">28.11.26</p><p class="event-time" data-i18n="receptionTime">Saturday · 10:00 AM</p><div class="event-venue"><svg aria-hidden="true"><use href="#i-pin"/></svg><div><h4 data-i18n="receptionVenue">Mangena Gangayya<br>Kalyana Mandapam</h4></div></div><a class="button button-sage directions" href="https://maps.app.goo.gl/k586X54S34gXMedg8" target="_blank" rel="noopener noreferrer"><span data-i18n="directions">Take me there</span><svg><use href="#i-arrow"/></svg></a><div class="event-actions"><details class="calendar-menu"><summary><svg aria-hidden="true"><use href="#i-calendar"/></svg><span data-i18n="addCalendar">Add to calendar</span></summary><div class="calendar-options"><a id="google-reception" target="_blank" rel="noopener noreferrer" data-i18n="googleCalendar">Google Calendar</a><button type="button" data-calendar="reception" data-i18n="downloadCalendar">Apple / Outlook (.ics)</button></div></details><button type="button" class="text-button" data-qr="reception" data-i18n="viewQr">View QR</button></div><p class="event-ministry"><span data-i18n="receptionMinistry">Prayer &amp; blessings</span><span data-i18n="receptionPastor">Rev. V. Sudhakar</span></p></article>
       </div>
       <p class="events-timezone" data-i18n="timezone">All times are in India Standard Time.</p>
-      <div class="clergy-landscape">
-        <div class="watercolor-scene scene-river reveal" aria-hidden="true"></div>
-        <div class="watercolor-scene scene-palm reveal" aria-hidden="true"></div>
-      <section id="solemnization" class="solemnization section-wrap" aria-labelledby="solemnization-title">
-        <div class="solemnization-heading reveal"><p class="eyebrow" data-i18n="solemnizationEyebrow">26.11.26</p><h2 id="solemnization-title" data-i18n="solemnizationTitle">To be solemnized by</h2></div>
-        <div class="officiant reveal"><h3 data-i18n="officiantName">Rev. K. Rajesh Kumar</h3><p class="minister-degrees">M.A., B.Ed., D.M.S., B.D.</p><p class="minister-role" data-i18n="officiantRole">Parish Pastor</p></div>
-        <div class="minister-presence"><p class="minister-presence-label reveal" data-i18n="ministersPresence">In the presence of</p><ul class="minister-list"><li class="reveal" data-i18n="pastorShyambabu">Rev. K. Shyambabu</li><li class="reveal" data-i18n="pastorWellington">Rev. K. R. Paul Wellington</li><li class="reveal" data-i18n="pastorKamal">Rev. M. Kamal Kumar</li><li class="reveal" data-i18n="pastorRatnakar">Rev. V. Ratnakar</li></ul></div>
-      </section>
-      <section id="reception-clergy" class="solemnization reception-clergy section-wrap" aria-labelledby="reception-clergy-title">
-        <div class="solemnization-heading reveal"><p class="eyebrow" data-i18n="receptionClergyEyebrow">28.11.26 · The reception</p><h2 id="reception-clergy-title" data-i18n="receptionClergyTitle">Reception led by</h2></div>
-        <div class="officiant reveal"><h3 data-i18n="receptionPastor">Rev. V. Sudhakar</h3><p class="minister-degrees">B.A., B.D.</p><p class="minister-role" data-i18n="officiantRole">Parish Pastor</p><p class="minister-church" data-i18n="receptionPastorChurch">St. Mathews Lutheran Church, Razole</p></div>
-      </section>
-      </div>
     </section>
 
     <div class="scroll-thread reveal" aria-hidden="true"><svg viewBox="0 0 70 76"><path class="thread-line" pathLength="1" d="M35 3C18 20 52 29 35 44S35 62 35 73"/><path class="thread-leaf" d="M35 44C18 43 19 29 21 26c10 3 16 10 14 18Zm1-15c1-12 9-16 16-17-1 10-6 16-16 17Z"/></svg></div>
@@ -182,7 +169,7 @@
   <dialog id="qr-dialog" class="qr-dialog" aria-labelledby="qr-title"><button type="button" class="dialog-close icon-button" data-close-dialog aria-label="Close"><svg><use href="#i-close"/></svg></button><p class="eyebrow" data-i18n="findVenue">Find your way to us</p><h2 id="qr-title"></h2><img id="qr-image" alt="Venue location QR code" width="246" height="246"><p id="qr-venue"></p><a id="qr-directions" class="button button-sage" target="_blank" rel="noopener noreferrer" data-i18n="openDirections">Open directions</a></dialog>
   <dialog id="photo-dialog" class="photo-dialog" aria-label="Dileep and Dayana’s photograph"><button type="button" class="dialog-close icon-button" data-close-dialog aria-label="Close photograph"><svg><use href="#i-close"/></svg></button><img src="dileep-dayana-retouched.jpg" alt="Dileep and Dayana holding hands on the beach" width="1024" height="1536"></dialog>
   <div id="toast" role="status" aria-live="polite" class="toast"></div>
-  <audio id="music" preload="none" src="our-music.m4a"></audio>
+  <audio id="music" preload="auto" src="our-music.m4a?v=15"></audio>
   <noscript><p class="noscript-note">The invitation and venue links work without JavaScript. Enable JavaScript for music, Telugu, calendar downloads, and the interactive date.</p></noscript>
 </body>
 </html>

@@ -90,19 +90,10 @@
     "backTop": "ప్రారంభానికి ↑",
     "findVenue": "వేదిక వివరాలు",
     "openDirections": "వేదికకు మార్గం",
-    "solemnizationEyebrow": "26.11.26",
-    "solemnizationTitle": "వివాహము జరిపించువారు",
+    "weddingMinistry": "వివాహము జరిపించువారు",
+    "receptionMinistry": "ప్రార్థన, ఆశీర్వచనములు",
     "officiantName": "రెవ. కె. రాజేష్ కుమార్",
-    "officiantRole": "పారిష్ పాస్టర్",
-    "ministersPresence": "ఆశీర్వచనములు",
-    "pastorShyambabu": "రెవ. కె. శ్యాంబాబు",
-    "pastorWellington": "రెవ. కె. ఆర్. పాల్ వెల్లింగ్టన్",
-    "pastorKamal": "రెవ. ఎం. కమల్ కుమార్",
-    "pastorRatnakar": "రెవ. వి. రత్నాకర్",
-    "receptionClergyEyebrow": "28.11.26 · వివాహ విందు",
-    "receptionClergyTitle": "ప్రార్థన, ఆశీర్వచనములు",
     "receptionPastor": "రెవ. వి. సుధాకర్",
-    "receptionPastorChurch": "పరిశుద్ధ మత్తయి లూథరన్ చర్చి, రాజోలు",
     "invitingFamilies": "మోకన & దాసరి వారి కుటుంబాలు"
 };
   const extra = {
@@ -145,6 +136,8 @@
   $('#music-toggle').addEventListener('click',()=>{if(audio.paused){if(audio.ended)audio.currentTime=0;playMusic();}else audio.pause();});
   ['play','pause','ended'].forEach(event=>audio.addEventListener(event,updateMusic));
   audio.addEventListener('error',()=>{updateMusic();say(extra[language].audioError);});
+  // Prepare the audio while the envelope is visible; playback still starts in the tap handler.
+  audio.load();
   function openInvitation(withMusic){
     if(opened)return;opened=true;if(withMusic)playMusic();
     $('#cover').classList.add('is-opening');$('#open-invitation').disabled=true;$('#open-quietly').disabled=true;
@@ -176,7 +169,7 @@
   }
   $('#reveal-date').addEventListener('click',revealDate);
   const canvas=$('#scratch-canvas'), ctx=canvas.getContext('2d',{willReadFrequently:true});
-  let scratching=false,lastPoint=null,scratchPoints=[];
+  let scratching=false,scratchPointer=null,lastPoint=null,scratchPoints=[];
   function drawFoil(){
     if(dateRevealed)return;
     const rect=canvas.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);if(!rect.width)return;
@@ -189,12 +182,14 @@
   }
   function pointFrom(event){const b=canvas.getBoundingClientRect();return{x:event.clientX-b.left,y:event.clientY-b.top,w:b.width,h:b.height};}
   function scratch(event){
-    if(!scratching||dateRevealed)return;const p=pointFrom(event);ctx.beginPath();ctx.moveTo(lastPoint?.x??p.x,lastPoint?.y??p.y);ctx.lineTo(p.x+.01,p.y+.01);ctx.stroke();scratchPoints.push({x:p.x/p.w,y:p.y/p.h});lastPoint=p;
+    if(!scratching||dateRevealed||event.pointerId!==scratchPointer)return;
+    if(event.cancelable)event.preventDefault();
+    const p=pointFrom(event);ctx.beginPath();ctx.moveTo(lastPoint?.x??p.x,lastPoint?.y??p.y);ctx.lineTo(p.x+.01,p.y+.01);ctx.stroke();scratchPoints.push({x:p.x/p.w,y:p.y/p.h});lastPoint=p;
   }
-  canvas.addEventListener('pointerdown',event=>{if(dateRevealed)return;scratching=true;lastPoint=null;canvas.setPointerCapture(event.pointerId);$('#scratch-wrap').classList.add('is-scratching');scratch(event);});
+  canvas.addEventListener('pointerdown',event=>{if(dateRevealed||!event.isPrimary||event.button!==0)return;event.preventDefault();scratching=true;scratchPointer=event.pointerId;lastPoint=null;canvas.setPointerCapture(event.pointerId);$('#scratch-wrap').classList.add('is-scratching');scratch(event);});
   canvas.addEventListener('pointermove',scratch);
-  function endScratch(){if(!scratching)return;scratching=false;lastPoint=null;const pixels=ctx.getImageData(0,0,canvas.width,canvas.height).data;let clear=0,total=0;for(let i=3;i<pixels.length;i+=64){total++;if(pixels[i]<60)clear++;}if(clear/total>.28)revealDate();}
-  canvas.addEventListener('pointerup',endScratch);canvas.addEventListener('pointercancel',endScratch);
+  function endScratch(event){if(!scratching||event.pointerId!==scratchPointer)return;scratching=false;scratchPointer=null;lastPoint=null;const pixels=ctx.getImageData(0,0,canvas.width,canvas.height).data;let clear=0,total=0;for(let i=3;i<pixels.length;i+=64){total++;if(pixels[i]<60)clear++;}if(clear/total>.28)revealDate();}
+  canvas.addEventListener('pointerup',endScratch);canvas.addEventListener('pointercancel',endScratch);canvas.addEventListener('lostpointercapture',endScratch);
   new ResizeObserver(drawFoil).observe(canvas);
 
   function highlightEvent(id){
@@ -254,16 +249,18 @@
     try{await navigator.clipboard.writeText(url.href);say(extra[language].copied);}catch{say(extra[language].shareFailed);}
   });
 
-  // Gentle, one-time reveals begin just before content reaches the viewport.
+  // Reveal details inside the viewport, with stationary event-card outlines.
   function stagger(elements,step=60){elements.forEach((element,index)=>{element.classList.add('reveal');element.style.setProperty('--reveal-delay',`${Math.min(index*step,120)}ms`);});}
-  $$('.section-heading, .solemnization-heading').forEach(group=>{group.classList.remove('reveal');stagger([...group.children]);});
+  $$('.section-heading').forEach(group=>{group.classList.remove('reveal');stagger([...group.children]);});
   $('#families').classList.remove('reveal');
   stagger($$('#families > .eyebrow, #families > h2'));
   stagger($$('.family-member'),140);
   $$('#families > .botanical-divider, .family-amp').forEach(element=>element.classList.add('reveal'));
   $('.footer-content').classList.remove('reveal');stagger([...$('.footer-content').children],100);
   stagger($$('.hero-copy > :not(.hero-corner)'),90);$('.hero-picture').classList.add('reveal');
-  stagger($$('.date-layout > .reveal'),140);stagger($$('.prewedding-card'),140);stagger($$('.event-card'),140);stagger($$('.minister-list > li'),90);
+  stagger($$('.date-layout > .reveal'),100);
+  $$('.event-card').forEach(card=>{card.classList.remove('reveal');stagger([...card.children],70);});
+  $$('.prewedding-card').forEach(card=>{card.classList.remove('reveal');$('.ceremony-art',card).classList.add('reveal');stagger([...$('.ceremony-content',card).children],60);});
   const revealTargets=$$('.reveal');
   let scrollRevealObserver;
   function startScrollReveals(){
@@ -273,11 +270,17 @@
       entries.forEach(entry=>{
         if(entry.isIntersecting){
           entry.target.classList.add('is-visible');
-          scrollRevealObserver.unobserve(entry.target);
         }
       });
-    },{threshold:.01,rootMargin:'0px 0px 160px 0px'});
+    },{threshold:.04,rootMargin:'0px 0px -3% 0px'});
     revealTargets.forEach(element=>scrollRevealObserver.observe(element));
+    // Reset only once well outside the screen, so returning guests see the transition again.
+    const resetObserver=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(!entry.isIntersecting&&!entry.target.contains(document.activeElement))entry.target.classList.remove('is-visible');
+      });
+    },{rootMargin:'180px 0px',threshold:0});
+    revealTargets.forEach(element=>resetObserver.observe(element));
   }
   document.addEventListener('focusin',event=>event.target.closest('.reveal')?.classList.add('is-visible'));
   if(reducedMotion)revealTargets.forEach(element=>element.classList.add('is-visible'));

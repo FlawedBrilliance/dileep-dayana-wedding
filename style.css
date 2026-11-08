@@ -254,11 +254,12 @@ html[lang=te] .family-invitation h2{font-size:27px;text-wrap:balance}
 .families-section{padding-top:26px;padding-bottom:18px}
 .main-nav a[aria-current=location]{color:var(--ink)}
 .main-nav a[aria-current=location]:after{transform:scaleX(1)}
-#scratch-canvas{touch-action:pan-y pinch-zoom}
+#scratch-canvas{touch-action:none;user-select:none;-webkit-user-select:none;overscroll-behavior:contain}
 @media(prefers-reduced-motion:no-preference){
   .js .reveal{transform:translateY(4px);transition-duration:1s,1.2s;transition-timing-function:cubic-bezier(.2,.6,.3,1)}
   .js .watercolor-scene.reveal{transform:none;transition:opacity 1.8s ease-out}
 }
+
 @media(max-width:700px){
   html{scroll-padding-top:122px}
   body{font-size:19px}
@@ -421,4 +422,23 @@ html[lang=te] .family-invitation h2{font-size:27px;text-wrap:balance}
   .prewedding-list:before{left:40px}
   html[lang=te] .ceremony-content h3{font-size:18px}
   html[lang=te] .prewedding-time{font-size:13px}
+}
+
+/* V15: soft floral edges, in-view reveals, and quiet event credits. */
+.hero>.hero-corner{left:-55px;top:8px;width:260px;height:170px;background-size:520px auto;opacity:.32;animation:none;mask-image:linear-gradient(to bottom,transparent,#000 24%,#000 58%,transparent),linear-gradient(to right,transparent,#000 22%,#000 60%,transparent);mask-composite:intersect}
+.site-header{border-bottom:0}
+.event-ministry{margin:22px auto 0;max-width:300px;color:var(--muted);font-size:17px;line-height:1.5}
+.event-ministry span{display:block}
+.event-ministry span:first-child{font-size:14px;margin-bottom:3px}
+html[lang=te] .event-ministry{font-size:14px;line-height:1.9}
+html[lang=te] .event-ministry span:first-child{font-size:12px}
+@media(prefers-reduced-motion:no-preference){
+  .js .reveal{transform:translate3d(0,16px,0);transition:opacity 1.05s cubic-bezier(.2,.65,.3,1) var(--reveal-delay,0ms),transform 1.25s cubic-bezier(.2,.65,.3,1) var(--reveal-delay,0ms)}
+  .js .reveal.is-visible{transform:translate3d(0,0,0)}
+  .js .hero-picture.reveal,.js .watercolor-scene.reveal,.js .ceremony-art.reveal{transform:none;transition-property:opacity}
+}
+@media(max-width:700px){
+  .hero>.hero-corner{left:-42px;top:8px;width:180px;height:115px;background-size:400px auto;opacity:.25}
+  .event-ministry{margin-top:16px;font-size:16px}
+  html[lang=te] .event-ministry{font-size:13px}
 }
