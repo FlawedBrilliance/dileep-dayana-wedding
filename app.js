@@ -10,7 +10,7 @@
   }));
   // Telugu follows invitation-card wording and its own reading order.
   const telugu = {
-    "coverEyebrow": "శుభ వివాహ ఆహ్వానము",
+    "coverEyebrow": "పరిశుద్ధ వివాహ ఆహ్వానము",
     "dileep": "దిలీప్",
     "dayana": "డయాన",
     "coverHint": "ముద్రను స్పృశించి ఆహ్వాన పత్రికను తెరవండి",
@@ -19,7 +19,7 @@
     "navPrewedding": "పెళ్లి వేడుకలు",
     "navEvents": "వివాహం · విందు",
     "navFamilies": "వధూవరులు",
-    "heroEyebrow": "శుభ వివాహ ఆహ్వానము",
+    "heroEyebrow": "పరిశుద్ధ వివాహ ఆహ్వానము",
     "heroInvite": "మా పిల్లల వివాహ మహోత్సవమునకు\nమీరు సకుటుంబ సమేతంగా విచ్చేసి\nవధూవరులను ఆశీర్వదించవలసిందిగా\nసాదరంగా ఆహ్వానిస్తున్నాము.",
     "city": "రాజమండ్రి",
     "celebrateButton": "వివరాలు",
@@ -31,7 +31,7 @@
     "ourWeddingDay": "వివాహ తేదీ",
     "weddingTime": "గురువారం · ఉదయం 10 గంటలకు",
     "scratchTitle": "వివాహ శుభదినం",
-    "scratchHint": "బంగారు పొరపై మృదువుగా వేలిని జరపండి",
+    "scratchHint": "తేదీ కోసం బంగారు పొరపై వేలిని అటూ ఇటూ జరపండి",
     "revealDate": "వివాహ తేదీని వీక్షించండి",
     "countdownCaption": "వివాహానికి ఇంకా",
     "days": "రోజులు",
@@ -47,25 +47,27 @@
     "preweddingIntro": "ఈ వేడుకలకు బంధుమిత్రులందరికీ సాదర ఆహ్వానం.",
     "novShort": "నవం",
     "pellikodukuShortTime": "ఉ. 9:00",
-    "haldiShortTime": "ఉ. 11:00",
+    "haldiShortTime": "ఉ. 9:00",
     "pradhanamShortTime": "ఉ. 10:00",
-    "pellikodukuNote": "పెళ్లికొడుకు, పెళ్లికూతురు వేడుక",
-    "haldiNote": "పసుపు వేడుక",
+    "pellikodukuNote": "పెళ్లికొడుకు వేడుక",
+    "haldiNote": "పెళ్లికూతురు, పసుపు వేడుక",
     "pradhanamNote": "ప్రధానం",
     "preweddingKey": "23, 25 · పెళ్లి వేడుకలు",
-    "pellikodukuLabel": "పెళ్లికొడుకు –\nపెళ్లికూతురు",
-    "haldiLabel": "పసుపు వేడుక",
+    "pellikodukuLabel": "పెళ్లికొడుకు",
+    "haldiLabel": "పెళ్లికూతురు & పసుపు వేడుక",
     "pradhanamLabel": "ప్రధానం",
     "pellikodukuTime": "సోమవారం · ఉదయం 9 గంటలకు",
-    "haldiTime": "సోమవారం · ఉదయం 11 గంటలకు",
+    "haldiTime": "సోమవారం · ఉదయం 9 గంటలకు",
     "pradhanamTime": "బుధవారం · ఉదయం 10 గంటలకు",
     "ourHome": "స్వగృహమునందు",
     "razoleHome": "స్వగృహమునందు, రాజోలు",
+    "verseText": "వివాహము అన్ని విషయములలో ఘనమైనది.",
+    "verseReference": "హెబ్రీయులకు 13:4",
     "eventsEyebrow": "26, 28 నవంబర్ 2026",
     "eventsTitle": "వివాహం · విందు",
     "eventsIntro": "వివాహ మహోత్సవమునకు, వివాహ విందునకు\nతమరు సకుటుంబ సమేతంగా విచ్చేయ ప్రార్థన.",
-    "weddingLabel": "శుభ వివాహము",
-    "weddingHeading": "శుభ వివాహము",
+    "weddingLabel": "పరిశుద్ధ వివాహము",
+    "weddingHeading": "పరిశుద్ధ వివాహము",
     "church": "ఎపిఫానియా లూథరన్ చర్చి",
     "directions": "వేదికకు మార్గం",
     "addCalendar": "క్యాలెండర్‌లో చేర్చండి",
@@ -83,7 +85,7 @@
     "daughterOf": "దంపతుల కుమార్తె",
     "groomParents": "శ్రీ మోకన యేసు రత్నం – శ్రీమతి లత",
     "brideParents": "శ్రీ దాసరి రత్నకుమార్ – శ్రీమతి రాజమణి",
-    "familyMessage": "ఈ శుభ వివాహ మహోత్సవమునకు\nతమరు సకుటుంబ సమేతంగా విచ్చేసి\nవధూవరులను దీవించవలసినదిగా ప్రార్థన.",
+    "familyMessage": "ఈ పరిశుద్ధ వివాహ మహోత్సవమునకు\nతమరు సకుటుంబ సమేతంగా విచ్చేసి\nవధూవరులను దీవించవలసినదిగా ప్రార్థన.",
     "footerEyebrow": "ఆహ్వానించువారు",
     "shareInvitation": "ఆహ్వాన పత్రికను పంచుకోండి",
     "saveAllEvents": "అన్ని కార్యక్రమాలను క్యాలెండర్‌లో చేర్చండి",
@@ -98,13 +100,13 @@
 };
   const extra = {
     en:{revealed:'26 November 2026 · we’ll see you there',past:'Our forever has begun.',play:'Play music',pause:'Pause music',copied:'Invitation link copied',shareFailed:'You can share the link from your browser’s address bar.',saved:'Calendar invitation downloaded',audioError:'Tap the music note whenever you’re ready.',qrWedding:'The wedding',qrReception:'The reception',close:'Close',photo:'View our photograph',open:'Open invitation with music'},
-    te:{"revealed": "వివాహం · 26 నవంబర్ 2026", "past": "వధూవరులకు శుభాకాంక్షలు!", "play": "సంగీతాన్ని వినండి", "pause": "సంగీతాన్ని నిలిపివేయండి", "copied": "ఆహ్వాన లింక్ కాపీ చేయబడింది", "shareFailed": "బ్రౌజర్‌లోని ఆహ్వాన లింక్‌ను కాపీ చేసి పంచుకోవచ్చు.", "saved": "క్యాలెండర్ ఫైలు డౌన్‌లోడ్ చేయబడింది", "audioError": "సంగీతాన్ని వినేందుకు పైన ఉన్న సంగీత చిహ్నాన్ని ఎంచుకోండి.", "qrWedding": "శుభ వివాహము", "qrReception": "వివాహ విందు", "close": "మూసివేయండి", "photo": "వధూవరుల ఛాయాచిత్రాన్ని వీక్షించండి", "open": "ఆహ్వాన పత్రికను సంగీతంతో వీక్షించండి"}
+    te:{"revealed": "వివాహం · 26 నవంబర్ 2026", "past": "వధూవరులకు శుభాకాంక్షలు!", "play": "సంగీతాన్ని వినండి", "pause": "సంగీతాన్ని నిలిపివేయండి", "copied": "ఆహ్వాన లింక్ కాపీ చేయబడింది", "shareFailed": "బ్రౌజర్‌లోని ఆహ్వాన లింక్‌ను కాపీ చేసి పంచుకోవచ్చు.", "saved": "క్యాలెండర్ ఫైలు డౌన్‌లోడ్ చేయబడింది", "audioError": "సంగీతాన్ని వినేందుకు పైన ఉన్న సంగీత చిహ్నాన్ని ఎంచుకోండి.", "qrWedding": "పరిశుద్ధ వివాహము", "qrReception": "వివాహ విందు", "close": "మూసివేయండి", "photo": "వధూవరుల ఛాయాచిత్రాన్ని వీక్షించండి", "open": "ఆహ్వాన పత్రికను సంగీతంతో వీక్షించండి"}
   };
   const events = {
-    pellikoduku:{start:'20261123T033000Z',title:'Dileep & Dayana — Pellikoduku & Pellikuthuru',titleTe:'దిలీప్, డయాన — పెళ్లికొడుకు, పెళ్లికూతురు వేడుక',venue:'At our home',venueTe:'స్వగృహమునందు',map:'https://maps.app.goo.gl/ajBaHXviCSALvjp98'},
-    haldi:{start:'20261123T053000Z',title:'Dileep & Dayana — Haldi',titleTe:'దిలీప్, డయాన — పసుపు వేడుక',venue:'At home, Razole',venueTe:'స్వగృహమునందు, రాజోలు',map:'https://maps.app.goo.gl/HdTt85K2s4XiNKxP8'},
+    pellikoduku:{start:'20261123T033000Z',title:'Dileep — Pellikoduku',titleTe:'దిలీప్ — పెళ్లికొడుకు వేడుక',venue:'At our home',venueTe:'స్వగృహమునందు',map:'https://maps.app.goo.gl/ajBaHXviCSALvjp98'},
+    haldi:{start:'20261123T033000Z',title:'Dayana — Pellikuthuru & Haldi',titleTe:'డయాన — పెళ్లికూతురు, పసుపు వేడుక',venue:'At home, Razole',venueTe:'స్వగృహమునందు, రాజోలు',map:'https://maps.app.goo.gl/HdTt85K2s4XiNKxP8'},
     pradhanam:{start:'20261125T043000Z',title:'Dileep & Dayana — Pradhanam',titleTe:'దిలీప్, డయాన — ప్రధానం',venue:'At home, Razole',venueTe:'స్వగృహమునందు, రాజోలు',map:'https://maps.app.goo.gl/HdTt85K2s4XiNKxP8'},
-    wedding:{start:'20261126T043000Z',title:"Dileep & Dayana’s Wedding",titleTe:'దిలీప్, డయాన — శుభ వివాహము',venue:'Epiphania Lutheran Church, Rajahmundry',venueTe:'ఎపిఫానియా లూథరన్ చర్చి, రాజమండ్రి',map:'https://maps.app.goo.gl/qwdpMbREzA9SZhTE7'},
+    wedding:{start:'20261126T043000Z',title:"Dileep & Dayana’s Wedding",titleTe:'దిలీప్, డయాన — పరిశుద్ధ వివాహము',venue:'Epiphania Lutheran Church, Rajahmundry',venueTe:'ఎపిఫానియా లూథరన్ చర్చి, రాజమండ్రి',map:'https://maps.app.goo.gl/qwdpMbREzA9SZhTE7'},
     reception:{start:'20261128T043000Z',title:"Dileep & Dayana’s Wedding Reception",titleTe:'దిలీప్, డయాన — వివాహ విందు',venue:'Mangena Gangayya Kalyana Mandapam',venueTe:'మంగెన గంగయ్య కళ్యాణ మండపం',map:'https://maps.app.goo.gl/k586X54S34gXMedg8'}
   };
   let language='en', opened=false, dateRevealed=false, activeQr=null, toastTimer;
@@ -162,7 +164,7 @@
   $('#invitation').inert=true;$('#site-header').inert=true;$('.site-footer').inert=true;
 
   function revealDate(){
-    if(dateRevealed)return;dateRevealed=true;$('#scratch-wrap').classList.add('is-scratched');
+    if(dateRevealed)return;dateRevealed=true;$('.scratch-gesture').hidden=true;$('#scratch-wrap').classList.add('is-scratched');
     $('#revealed-date').setAttribute('aria-hidden','false');$('#reveal-date').textContent=extra[language].revealed;
     $('#reveal-date').disabled=true;$('#scratch-canvas').style.touchAction='auto';
     setTimeout(()=>{$('#scratch-canvas').hidden=true;$('#scratch-caption').hidden=true;},reducedMotion?0:800);
@@ -186,7 +188,7 @@
     if(event.cancelable)event.preventDefault();
     const p=pointFrom(event);ctx.beginPath();ctx.moveTo(lastPoint?.x??p.x,lastPoint?.y??p.y);ctx.lineTo(p.x+.01,p.y+.01);ctx.stroke();scratchPoints.push({x:p.x/p.w,y:p.y/p.h});lastPoint=p;
   }
-  canvas.addEventListener('pointerdown',event=>{if(dateRevealed||!event.isPrimary||event.button!==0)return;event.preventDefault();scratching=true;scratchPointer=event.pointerId;lastPoint=null;canvas.setPointerCapture(event.pointerId);$('#scratch-wrap').classList.add('is-scratching');scratch(event);});
+  canvas.addEventListener('pointerdown',event=>{if(dateRevealed||!event.isPrimary||event.button!==0)return;event.preventDefault();scratching=true;scratchPointer=event.pointerId;lastPoint=null;canvas.setPointerCapture(event.pointerId);$('#scratch-wrap').classList.add('is-scratching');$('.scratch-gesture').hidden=true;scratch(event);});
   canvas.addEventListener('pointermove',scratch);
   function endScratch(event){if(!scratching||event.pointerId!==scratchPointer)return;scratching=false;scratchPointer=null;lastPoint=null;const pixels=ctx.getImageData(0,0,canvas.width,canvas.height).data;let clear=0,total=0;for(let i=3;i<pixels.length;i+=64){total++;if(pixels[i]<60)clear++;}if(clear/total>.28)revealDate();}
   canvas.addEventListener('pointerup',endScratch);canvas.addEventListener('pointercancel',endScratch);canvas.addEventListener('lostpointercapture',endScratch);
@@ -206,12 +208,12 @@
       const cell=document.createElement('div');cell.className='calendar-day';
       if([23,25,26,28].includes(day)){
         const event={23:'pellikoduku',25:'pradhanam',26:'wedding',28:'reception'}[day];const button=document.createElement('button');button.type='button';
-        const names=language==='te'?{23:'పెళ్లికొడుకు, పెళ్లికూతురు మరియు పసుపు వేడుక',25:'ప్రధానం',26:'శుభ వివాహము',28:'వివాహ విందు'}:{23:'Pellikoduku & Pellikuthuru and Haldi',25:'Pradhanam',26:'wedding',28:'reception'};
+        const names=language==='te'?{23:'పెళ్లికొడుకు, పెళ్లికూతురు మరియు పసుపు వేడుక',25:'ప్రధానం',26:'పరిశుద్ధ వివాహము',28:'వివాహ విందు'}:{23:'Pellikoduku and Pellikuthuru & Haldi',25:'Pradhanam',26:'wedding',28:'reception'};
         button.setAttribute('aria-label',language==='te'?`${day} నవంబర్ 2026 — ${names[day]} వివరాలు`:`${day} November 2026 — ${names[day]} details`);
         if(day===26)button.innerHTML='<svg class="calendar-heart" aria-hidden="true" viewBox="0 0 48 46"><path d="M24 40C15 33 2 24 3 13 4 1 18 0 24 10 31-1 45 2 45 13c0 12-15 24-21 30 8 1 10-4 10-4"/></svg>';
         else button.className=day===28?'reception-day':'prewedding-day';
         const number=document.createElement('span');number.textContent=day;button.append(number);
-        button.addEventListener('click',()=>{const card=$(`#${event}-card`);card.scrollIntoView({behavior:reducedMotion?'auto':'smooth',block:'center'});highlightEvent(event);});
+        button.addEventListener('click',()=>{const card=day===23?$('#prewedding'):$(`#${event}-card`);card.scrollIntoView({behavior:reducedMotion?'auto':'smooth',block:day===23?'start':'center'});highlightEvent(event);if(day===23)highlightEvent('haldi');});
         cell.append(button);
       }else cell.textContent=day;root.append(cell);
     }

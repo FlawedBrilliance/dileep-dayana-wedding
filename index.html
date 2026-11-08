@@ -14,9 +14,9 @@
   <link rel="icon" type="image/svg+xml" href="monogram.svg">
   <link rel="preload" href="cormorant.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="cormorant-italic.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="style.css?v=17">
+  <link rel="stylesheet" href="style.css?v=18">
   <script>document.documentElement.classList.replace('no-js','js')</script>
-  <script src="app.js?v=16" defer></script>
+  <script src="app.js?v=18" defer></script>
 </head>
 <body class="is-closed">
   <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
@@ -86,7 +86,7 @@
       <div class="section-heading reveal"><p class="eyebrow" data-i18n="dateEyebrow">A little something to remember</p><h2 data-i18n="dateTitle">Some dates just feel like forever.</h2></div>
       <div class="date-layout section-wrap">
         <div class="date-surprise reveal">
-          <div class="scratch-wrap" id="scratch-wrap"><div class="revealed-date" id="revealed-date" aria-hidden="true"><small data-i18n="ourWeddingDay">OUR WEDDING DAY</small><strong>26.11.26</strong><span data-i18n="weddingTime">Thursday · 10:00 AM</span></div><canvas id="scratch-canvas" aria-label="Scratch to reveal our wedding date"></canvas><div id="scratch-caption" class="scratch-caption"><svg aria-hidden="true"><use href="#i-leaf"/></svg><span data-i18n="scratchTitle">A date written in our hearts</span><small data-i18n="scratchHint">Scratch a little. Find our forever.</small></div></div>
+          <div class="scratch-wrap" id="scratch-wrap"><div class="revealed-date" id="revealed-date" aria-hidden="true"><small data-i18n="ourWeddingDay">OUR WEDDING DAY</small><strong>26.11.26</strong><span data-i18n="weddingTime">Thursday · 10:00 AM</span></div><canvas id="scratch-canvas" aria-label="Scratch to reveal our wedding date"></canvas><div id="scratch-caption" class="scratch-caption"><picture class="scratch-gesture" aria-hidden="true"><source media="(prefers-reduced-motion: reduce)" srcset="scratch-hand-still.png"><img src="scratch-hand.gif" alt="" width="160" height="94" loading="lazy"></picture><span data-i18n="scratchTitle">A date written in our hearts</span><small data-i18n="scratchHint">Move your finger side to side to reveal the date.</small></div></div>
           <button type="button" class="text-button reveal-date-button" id="reveal-date" data-i18n="revealDate">Or tap to reveal the date</button>
           <p class="countdown-caption" id="countdown-caption" data-i18n="countdownCaption">Counting the moments until we say “I do”</p>
           <div id="countdown" class="countdown" role="timer" aria-label="Time until the wedding"><div><strong id="days">—</strong><span data-i18n="days">days</span></div><i>:</i><div><strong id="hours">—</strong><span data-i18n="hours">hours</span></div><i>:</i><div><strong id="minutes">—</strong><span data-i18n="minutes">minutes</span></div><i>:</i><div><strong id="seconds">—</strong><span data-i18n="seconds">seconds</span></div></div>
@@ -105,14 +105,14 @@
       </svg></div>
       <div class="section-heading reveal"><p class="eyebrow" data-i18n="preweddingEyebrow">The joy begins at home</p><h2 data-i18n="preweddingTitle">Let the celebrations begin.</h2><p data-i18n="preweddingIntro">Come share in the warmth, laughter, and wedding festivities.</p></div>
       <nav class="ceremony-path section-wrap reveal" aria-label="Pre-wedding ritual times">
-        <a href="#pellikoduku-card" data-event-jump="pellikoduku"><span class="path-date">23 <span data-i18n="novShort">NOV</span></span><span class="path-time" data-i18n="pellikodukuShortTime">9:00 AM</span><span class="path-dot" aria-hidden="true"></span></a>
-        <a href="#haldi-card" data-event-jump="haldi"><span class="path-date">23 <span data-i18n="novShort">NOV</span></span><span class="path-time" data-i18n="haldiShortTime">11:00 AM</span><span class="path-dot" aria-hidden="true"></span></a>
-        <a href="#pradhanam-card" data-event-jump="pradhanam"><span class="path-date">25 <span data-i18n="novShort">NOV</span></span><span class="path-time" data-i18n="pradhanamShortTime">10:00 AM</span><span class="path-dot" aria-hidden="true"></span></a>
+        <a href="#pellikoduku-card" data-event-jump="pellikoduku"><span class="path-date">23 <span data-i18n="novShort">NOV</span></span><span class="path-label" data-i18n="pellikodukuLabel">Pellikoduku</span><span class="path-time" data-i18n="pellikodukuShortTime">9:00 AM</span><span class="path-dot" aria-hidden="true"></span></a>
+        <a href="#haldi-card" data-event-jump="haldi"><span class="path-date">23 <span data-i18n="novShort">NOV</span></span><span class="path-label" data-i18n="haldiLabel">Pellikuthuru &amp; Haldi</span><span class="path-time" data-i18n="haldiShortTime">9:00 AM</span><span class="path-dot" aria-hidden="true"></span></a>
+        <a href="#pradhanam-card" data-event-jump="pradhanam"><span class="path-date">25 <span data-i18n="novShort">NOV</span></span><span class="path-label" data-i18n="pradhanamLabel">Pradhanam</span><span class="path-time" data-i18n="pradhanamShortTime">10:00 AM</span><span class="path-dot" aria-hidden="true"></span></a>
       </nav>
       <div class="prewedding-list section-wrap">
         <article class="prewedding-card ceremony-pellikoduku reveal" id="pellikoduku-card" aria-labelledby="pellikoduku-title">
           <div class="ceremony-art" aria-hidden="true"><div class="ceremony-halo"></div><img src="ceremony-pellikoduku-small.png" srcset="ceremony-pellikoduku-small.png 384w, ceremony-pellikoduku.png 1024w" sizes="(max-width:700px) 104px, (max-width:1100px) 30vw, 330px" alt="" width="1024" height="1024" loading="lazy"><span class="ceremony-petal petal-one"></span><span class="ceremony-petal petal-two"></span></div>
-          <div class="ceremony-content"><p class="ceremony-note" data-i18n="pellikodukuNote">A home full of blessings</p><h3 id="pellikoduku-title" data-i18n="pellikodukuLabel">Pellikoduku<br>&amp; Pellikuthuru</h3>
+          <div class="ceremony-content"><p class="ceremony-note" data-i18n="pellikodukuNote">A home full of blessings</p><h3 id="pellikoduku-title" data-i18n="pellikodukuLabel">Pellikoduku</h3>
             <time class="prewedding-date" datetime="2026-11-23"><strong>23</strong><span><span data-i18n="november">November</span><small>2026</small></span></time>
             <p class="prewedding-time" data-i18n="pellikodukuTime">Monday · 9:00 AM</p><p class="prewedding-venue"><svg aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="ourHome">At our home</span></p>
             <a class="ceremony-directions" href="https://maps.app.goo.gl/ajBaHXviCSALvjp98" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="directions">Take me there</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
@@ -121,9 +121,9 @@
         </article>
         <article class="prewedding-card ceremony-haldi reveal" id="haldi-card" aria-labelledby="haldi-title">
           <div class="ceremony-art" aria-hidden="true"><div class="ceremony-halo"></div><img src="ceremony-haldi-small.png" srcset="ceremony-haldi-small.png 384w, ceremony-haldi.png 1024w" sizes="(max-width:700px) 104px, (max-width:1100px) 30vw, 330px" alt="" width="1024" height="1024" loading="lazy"><span class="ceremony-petal petal-one"></span><span class="ceremony-petal petal-two"></span></div>
-          <div class="ceremony-content"><p class="ceremony-note" data-i18n="haldiNote">A little sunshine, a lot of joy</p><h3 id="haldi-title" data-i18n="haldiLabel">Haldi</h3>
+          <div class="ceremony-content"><p class="ceremony-note" data-i18n="haldiNote">A little sunshine, a lot of joy</p><h3 id="haldi-title" data-i18n="haldiLabel">Pellikuthuru &amp; Haldi</h3>
             <time class="prewedding-date" datetime="2026-11-23"><strong>23</strong><span><span data-i18n="november">November</span><small>2026</small></span></time>
-            <p class="prewedding-time" data-i18n="haldiTime">Monday · 11:00 AM</p><p class="prewedding-venue"><svg aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="razoleHome">At home, Razole</span></p>
+            <p class="prewedding-time" data-i18n="haldiTime">Monday · 9:00 AM</p><p class="prewedding-venue"><svg aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="razoleHome">At home, Razole</span></p>
             <a class="ceremony-directions" href="https://maps.app.goo.gl/HdTt85K2s4XiNKxP8" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="directions">Take me there</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
             <details class="calendar-menu"><summary><svg aria-hidden="true"><use href="#i-calendar"/></svg><span data-i18n="addCalendar">Add to calendar</span><span class="calendar-plus" aria-hidden="true">+</span></summary><div class="calendar-options"><a id="google-haldi" target="_blank" rel="noopener noreferrer" data-i18n="googleCalendar">Google Calendar</a><button type="button" data-calendar="haldi" data-i18n="downloadCalendar">Apple / Outlook (.ics)</button></div></details>
           </div>
@@ -147,6 +147,7 @@
         <g class="garden-stems"><path pathLength="1" d="M28 490C114 403 48 336 123 253S134 127 196 24"/><path pathLength="1" d="M68 428Q47 392 14 373M76 374Q120 356 144 320M88 303Q48 281 34 243M123 253Q173 243 196 205M146 193Q112 172 104 139M159 133Q197 120 217 88M177 78Q157 54 159 28"/></g>
         <g class="garden-leaves"><path d="M58 412Q17 415 10 369Q50 370 58 412Z"/><path d="M88 369Q87 326 146 313Q139 357 88 369Z"/><path d="M82 298Q37 302 30 238Q72 251 82 298Z"/><path d="M132 252Q153 201 201 199Q190 246 132 252Z"/><path d="M143 191Q98 192 101 134Q140 151 143 191Z"/><path d="M164 132Q176 88 222 84Q213 125 164 132Z"/><path d="M177 80Q147 69 156 23Q182 43 177 80Z"/><path d="M191 35Q188 9 217 4Q215 28 191 35Z"/></g>
       </svg></div>
+      <figure class="bible-verse reveal"><blockquote><p data-i18n="verseText">Marriage is honourable in all.</p></blockquote><figcaption><cite data-i18n="verseReference">Hebrews 13:4</cite></figcaption></figure>
       <div class="section-heading reveal"><p class="eyebrow" data-i18n="eventsEyebrow">The wedding &amp; reception</p><h2 data-i18n="eventsTitle">Be a part of our joy.</h2><p data-i18n="eventsIntro">Bring your blessings, your laughter, and your favourite people.</p></div>
       <div class="event-grid section-wrap">
         <article class="event-card reveal" id="wedding-card"><p class="eyebrow" data-i18n="weddingLabel">The wedding</p><h3 data-i18n="weddingHeading">Where forever begins</h3><svg class="botanical-divider" aria-hidden="true"><use href="#i-leaf"/></svg><p class="event-date">26.11.26</p><p class="event-time" data-i18n="weddingTime">Thursday · 10:00 AM</p><div class="event-venue"><svg aria-hidden="true"><use href="#i-pin"/></svg><div><h4 data-i18n="church">Epiphania Lutheran Church</h4><p data-i18n="city">Rajahmundry</p></div></div><a class="button button-sage directions" href="https://maps.app.goo.gl/qwdpMbREzA9SZhTE7" target="_blank" rel="noopener noreferrer"><span data-i18n="directions">Take me there</span><svg><use href="#i-arrow"/></svg></a><div class="event-actions"><details class="calendar-menu"><summary><svg aria-hidden="true"><use href="#i-calendar"/></svg><span data-i18n="addCalendar">Add to calendar</span></summary><div class="calendar-options"><a id="google-wedding" target="_blank" rel="noopener noreferrer" data-i18n="googleCalendar">Google Calendar</a><button type="button" data-calendar="wedding" data-i18n="downloadCalendar">Apple / Outlook (.ics)</button></div></details><button type="button" class="text-button" data-qr="wedding" data-i18n="viewQr">View QR</button></div><p class="event-ministry"><span data-i18n="weddingMinistry">Solemnized by</span><span data-i18n="officiantName">Rev. K. Rajesh Kumar</span></p></article>
