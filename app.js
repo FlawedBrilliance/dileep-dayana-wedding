@@ -17,7 +17,7 @@
     "quietly": "సంగీతం లేకుండా వీక్షించండి",
     "coverFooter": "26 నవంబర్ 2026 · రాజమండ్రి",
     "navPrewedding": "పెళ్లి వేడుకలు",
-    "navEvents": "వివాహం · విందు",
+    "navEvents": "వివాహం · రిసెప్షన్",
     "navFamilies": "వధూవరులు",
     "heroEyebrow": "పరిశుద్ధ వివాహ ఆహ్వానము",
     "heroInvite": "మా పిల్లల వివాహ మహోత్సవమునకు\nమీరు సకుటుంబ సమేతంగా విచ్చేసి\nవధూవరులను ఆశీర్వదించవలసిందిగా\nసాదరంగా ఆహ్వానిస్తున్నాము.",
@@ -40,7 +40,7 @@
     "seconds": "సెకన్లు",
     "november": "నవంబర్",
     "weddingKey": "26 · వివాహం",
-    "receptionKey": "28 · విందు",
+    "receptionKey": "28 · రిసెప్షన్",
     "calendarHint": "వివరాల కోసం గుర్తించిన తేదీని ఎంచుకోండి",
     "preweddingEyebrow": "23, 25 నవంబర్ 2026",
     "preweddingTitle": "పెళ్లి వేడుకలు",
@@ -64,8 +64,8 @@
     "verseText": "వివాహము అన్ని విషయములలో ఘనమైనది.",
     "verseReference": "హెబ్రీయులకు 13:4",
     "eventsEyebrow": "26, 28 నవంబర్ 2026",
-    "eventsTitle": "వివాహం · విందు",
-    "eventsIntro": "వివాహ మహోత్సవమునకు, వివాహ విందునకు\nతమరు సకుటుంబ సమేతంగా విచ్చేయ ప్రార్థన.",
+    "eventsTitle": "వివాహం · రిసెప్షన్",
+    "eventsIntro": "వివాహ మహోత్సవమునకు, రిసెప్షన్ వేడుకకు\nతమరు సకుటుంబ సమేతంగా విచ్చేయ ప్రార్థన.",
     "weddingLabel": "పరిశుద్ధ వివాహము",
     "weddingHeading": "పరిశుద్ధ వివాహము",
     "church": "ఎపిఫానియా లూథరన్ చర్చి",
@@ -74,8 +74,8 @@
     "googleCalendar": "గూగుల్ క్యాలెండర్",
     "downloadCalendar": "ఆపిల్ / ఔట్‌లుక్ (.ics)",
     "viewQr": "QR కోడ్",
-    "receptionLabel": "వివాహ విందు",
-    "receptionHeading": "వివాహ విందు",
+    "receptionLabel": "రిసెప్షన్",
+    "receptionHeading": "రిసెప్షన్",
     "receptionTime": "శనివారం · ఉదయం 10 గంటలకు",
     "receptionVenue": "మంగెన గంగయ్య\nకళ్యాణ మండపం",
     "timezone": "సమయాలు భారత కాలమానం ప్రకారం.",
@@ -100,14 +100,14 @@
 };
   const extra = {
     en:{revealed:'26 November 2026 · we’ll see you there',past:'Our forever has begun.',play:'Play music',pause:'Pause music',copied:'Invitation link copied',shareFailed:'You can share the link from your browser’s address bar.',saved:'Calendar invitation downloaded',audioError:'Tap the music note whenever you’re ready.',qrWedding:'The wedding',qrReception:'The reception',close:'Close',photo:'View our photograph',open:'Open invitation with music'},
-    te:{"revealed": "వివాహం · 26 నవంబర్ 2026", "past": "వధూవరులకు శుభాకాంక్షలు!", "play": "సంగీతాన్ని వినండి", "pause": "సంగీతాన్ని నిలిపివేయండి", "copied": "ఆహ్వాన లింక్ కాపీ చేయబడింది", "shareFailed": "బ్రౌజర్‌లోని ఆహ్వాన లింక్‌ను కాపీ చేసి పంచుకోవచ్చు.", "saved": "క్యాలెండర్ ఫైలు డౌన్‌లోడ్ చేయబడింది", "audioError": "సంగీతాన్ని వినేందుకు పైన ఉన్న సంగీత చిహ్నాన్ని ఎంచుకోండి.", "qrWedding": "పరిశుద్ధ వివాహము", "qrReception": "వివాహ విందు", "close": "మూసివేయండి", "photo": "వధూవరుల ఛాయాచిత్రాన్ని వీక్షించండి", "open": "ఆహ్వాన పత్రికను సంగీతంతో వీక్షించండి"}
+    te:{"revealed": "వివాహం · 26 నవంబర్ 2026", "past": "వధూవరులకు శుభాకాంక్షలు!", "play": "సంగీతాన్ని వినండి", "pause": "సంగీతాన్ని నిలిపివేయండి", "copied": "ఆహ్వాన లింక్ కాపీ చేయబడింది", "shareFailed": "బ్రౌజర్‌లోని ఆహ్వాన లింక్‌ను కాపీ చేసి పంచుకోవచ్చు.", "saved": "క్యాలెండర్ ఫైలు డౌన్‌లోడ్ చేయబడింది", "audioError": "సంగీతాన్ని వినేందుకు పైన ఉన్న సంగీత చిహ్నాన్ని ఎంచుకోండి.", "qrWedding": "పరిశుద్ధ వివాహము", "qrReception": "రిసెప్షన్", "close": "మూసివేయండి", "photo": "వధూవరుల ఛాయాచిత్రాన్ని వీక్షించండి", "open": "ఆహ్వాన పత్రికను సంగీతంతో వీక్షించండి"}
   };
   const events = {
     pellikoduku:{start:'20261123T033000Z',title:'Dileep — Pellikoduku',titleTe:'దిలీప్ — పెళ్లికొడుకు వేడుక',venue:'At our home',venueTe:'స్వగృహమునందు',map:'https://maps.app.goo.gl/ajBaHXviCSALvjp98'},
     haldi:{start:'20261123T033000Z',title:'Dayana — Pellikuthuru & Haldi',titleTe:'డయాన — పెళ్లికూతురు, పసుపు వేడుక',venue:'At home, Razole',venueTe:'స్వగృహమునందు, రాజోలు',map:'https://maps.app.goo.gl/HdTt85K2s4XiNKxP8'},
     pradhanam:{start:'20261125T043000Z',title:'Dileep & Dayana — Pradhanam',titleTe:'దిలీప్, డయాన — ప్రధానం',venue:'At home, Razole',venueTe:'స్వగృహమునందు, రాజోలు',map:'https://maps.app.goo.gl/HdTt85K2s4XiNKxP8'},
     wedding:{start:'20261126T043000Z',title:"Dileep & Dayana’s Wedding",titleTe:'దిలీప్, డయాన — పరిశుద్ధ వివాహము',venue:'Epiphania Lutheran Church, Rajahmundry',venueTe:'ఎపిఫానియా లూథరన్ చర్చి, రాజమండ్రి',map:'https://maps.app.goo.gl/qwdpMbREzA9SZhTE7'},
-    reception:{start:'20261128T043000Z',title:"Dileep & Dayana’s Wedding Reception",titleTe:'దిలీప్, డయాన — వివాహ విందు',venue:'Mangena Gangayya Kalyana Mandapam',venueTe:'మంగెన గంగయ్య కళ్యాణ మండపం',map:'https://maps.app.goo.gl/k586X54S34gXMedg8'}
+    reception:{start:'20261128T043000Z',title:"Dileep & Dayana’s Wedding Reception",titleTe:'దిలీప్, డయాన — రిసెప్షన్',venue:'Mangena Gangayya Kalyana Mandapam',venueTe:'మంగెన గంగయ్య కళ్యాణ మండపం',map:'https://maps.app.goo.gl/k586X54S34gXMedg8'}
   };
   let language='en', opened=false, dateRevealed=false, activeQr=null, toastTimer;
   const audio=$('#music');
@@ -208,7 +208,7 @@
       const cell=document.createElement('div');cell.className='calendar-day';
       if([23,25,26,28].includes(day)){
         const event={23:'pellikoduku',25:'pradhanam',26:'wedding',28:'reception'}[day];const button=document.createElement('button');button.type='button';
-        const names=language==='te'?{23:'పెళ్లికొడుకు, పెళ్లికూతురు మరియు పసుపు వేడుక',25:'ప్రధానం',26:'పరిశుద్ధ వివాహము',28:'వివాహ విందు'}:{23:'Pellikoduku and Pellikuthuru & Haldi',25:'Pradhanam',26:'wedding',28:'reception'};
+        const names=language==='te'?{23:'పెళ్లికొడుకు, పెళ్లికూతురు మరియు పసుపు వేడుక',25:'ప్రధానం',26:'పరిశుద్ధ వివాహము',28:'రిసెప్షన్'}:{23:'Pellikoduku and Pellikuthuru & Haldi',25:'Pradhanam',26:'wedding',28:'reception'};
         button.setAttribute('aria-label',language==='te'?`${day} నవంబర్ 2026 — ${names[day]} వివరాలు`:`${day} November 2026 — ${names[day]} details`);
         if(day===26)button.innerHTML='<svg class="calendar-heart" aria-hidden="true" viewBox="0 0 48 46"><path d="M24 40C15 33 2 24 3 13 4 1 18 0 24 10 31-1 45 2 45 13c0 12-15 24-21 30 8 1 10-4 10-4"/></svg>';
         else button.className=day===28?'reception-day':'prewedding-day';
