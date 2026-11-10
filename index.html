@@ -172,5 +172,15 @@
   <div id="toast" role="status" aria-live="polite" class="toast"></div>
   <audio id="music" preload="auto" src="our-music.m4a?v=15"></audio>
   <noscript><p class="noscript-note">The invitation and venue links work without JavaScript. Enable JavaScript for music, Telugu, calendar downloads, and the interactive date.</p></noscript>
+  <!-- Count visits to the published invitation, excluding local previews and in-page navigation. -->
+  <script>
+    if (location.hostname === 'flawedbrilliance.github.io') {
+      const analytics = document.createElement('script');
+      analytics.type = 'module';
+      analytics.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+      analytics.setAttribute('data-cf-beacon', '{"token":"fa3f7427e3494ec5bef88797cc1fa0fc","spa":false}');
+      document.body.append(analytics);
+    }
+  </script>
 </body>
 </html>
